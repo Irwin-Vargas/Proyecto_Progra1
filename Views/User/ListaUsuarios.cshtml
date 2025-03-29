@@ -1,0 +1,9 @@
+@model List<Proyecto_Programacion1.Models.UserModel>
+
+<h2>Usuarios Registrados</h2>
+<ul>
+    @foreach (var usuario in Model)
+    {
+        <li>@usuario.Nombre - @usuario.Correo</li>
+    }
+</ul>
