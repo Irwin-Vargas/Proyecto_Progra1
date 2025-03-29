@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Perucha - Peruvian Burger</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/imagenes/logo.jpeg" alt="La Perucha Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Catalogo">PRODUCTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Contacto">CONTACTO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Registro">🛒 REGISTRO</a></li>
+                    <li class="nav-item"><a class="btn btn-dark" href="/Login">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección del banner -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <img src="imagenes/banner.jpeg" class="img-fluid w-100" alt="Promoción La Perucha">
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor dinámico de la vista -->
+    <div class="container mt-4">
+        @RenderBody()  <!-- ⚠️ Aquí se inserta el contenido de cada vista -->
+    </div>
+
+    <!-- Sección de Promociones -->
+    <div class="container mt-5">
+        <h2 class="fw-bold">PROMOCIONES</h2>
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-4 text-center">
+                <img src="imagenes/burger clasica.jpeg" class="img-fluid rounded" alt="Perucha Clásica">
+                <h5 class="mt-2">Perucha Clásica</h5>
+                <p>La Clásica 🍔 con salsa especial de la casa.</p>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-md-4 text-center">
+                <img src="imagenes/burger cebolla.jpeg" class="img-fluid rounded" alt="Perucha Criolla">
+                <h5 class="mt-2">Perucha Criolla</h5>
+                <p>La Criolla 🥓 con su salsa criolla y toque peruano.</p>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-md-4 text-center">
+                <img src="imagenes/burger huevo.jpeg" class="img-fluid rounded" alt="Perucha Anticuchera">
+                <h5 class="mt-2">Perucha Anticuchera</h5>
+                <p>La Anticuchera 🥩 con su carne marinada y papas nativas crocantes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 La Perucha - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
