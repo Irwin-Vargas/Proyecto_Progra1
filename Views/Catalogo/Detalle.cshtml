@@ -1,0 +1,18 @@
+@model Proyecto_Programacion1.Models.Producto
+
+<h2>@Model.Nombre</h2>
+<p>@Model.Descripcion</p>
+<p>Precio: S/. @Model.Precio</p>
+
+<form asp-controller="Carrito" asp-action="Agregar" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Nombre" />
+    <input type="hidden" asp-for="Precio" />
+
+    <div class="mb-3">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="number" name="cantidad" class="form-control" value="1" min="1" required />
+    </div>
+    
+    <button type="submit" class="btn btn-success">Agregar al carrito</button>
+</form>

@@ -1,0 +1,32 @@
+@model IEnumerable<Proyecto_Programacion1.Models.Orden>
+
+<h2>Historial de Órdenes</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var orden in Model)
+        {
+            <tr>
+                <td>@orden.Fecha.ToString("dd/MM/yyyy")</td>
+                <td>@orden.Total.ToString("C")</td>
+                <td>@(orden.Completada ? "Completada" : "Pendiente")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@orden.Id" class="btn btn-info">Ver Detalles</a>
+                    @if (User.IsInRole("admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@orden.Id" class="btn btn-warning">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@orden.Id" class="btn btn-danger">Eliminar</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
