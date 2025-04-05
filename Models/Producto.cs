@@ -11,5 +11,6 @@ namespace Proyecto_Programacion1.Models
         public string Nombre { get; set; } = string.Empty; // ✅ Evita nulos
         public string Descripcion { get; set; } = string.Empty; // ✅ Evita nulos
         public decimal Precio { get; set; }
+        public string ImagenUrl { get; set; }
     }
 }
