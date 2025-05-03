@@ -19,7 +19,7 @@ namespace Proyecto_Programacion1.Controllers
             if (ModelState.IsValid)
             {
                 usuarios.Add(usuario); // Agrega el usuario a la lista
-                return RedirectToAction("ListaUsuarios");
+                
             }
             return View(usuario);
         }

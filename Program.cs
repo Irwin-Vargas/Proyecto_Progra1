@@ -46,6 +46,9 @@ app.UseAuthentication();  // ✅ Habilitar autenticación
 app.UseAuthorization();   // ✅ Habilitar autorización
 
 app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
     name: "carrito",
     pattern: "{controller=Carrito}/{action=Index}/{id?}");
 
@@ -53,9 +56,6 @@ app.MapControllerRoute(
     name: "orden",
     pattern: "{controller=Orden}/{action=Index}/{id?}");
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
     
 app.MapControllerRoute(
     name: "registro",

@@ -11,9 +11,6 @@ namespace Proyecto_Programacion1.Controllers
         // ✅ Página de inicio
         public IActionResult Index() => View();
 
-        // ✅ Página de privacidad
-        public IActionResult Privacy() => View();
-
         // ✅ Dashboard solo para admin
         public IActionResult Dashboard()
         {

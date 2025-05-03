@@ -1769,11 +1769,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\Proy_progra1\\Proyecto-Programacion1.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyecto_Progra1\\Proyecto-Programacion1.csproj",
       "projectName": "Proyecto-Programacion1",
-      "projectPath": "C:\\Users\\Usuario\\Downloads\\Proy_progra1\\Proyecto-Programacion1.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyecto_Progra1\\Proyecto-Programacion1.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Downloads\\Proy_progra1\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyecto_Progra1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
